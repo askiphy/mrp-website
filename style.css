@@ -367,7 +367,7 @@ html{
 }
 
 header {
-    background: #b4eeb4;
+    background: #5a2e6b;
     padding-bottom: 30px;
     position: fixed;
     top: 0;
@@ -389,7 +389,7 @@ body {
 .header_logo {
     cursor: pointer;
     font-size: 48px;
-    color: #3476f9;
+    color: #c800ff;
     font-weight: bold;
     font-family: Reggae One;
     margin-top: 30px;
@@ -413,9 +413,15 @@ body {
 }
 
 .intro {
-    background-color: #faeedd;
+    background-color: #4f1a63;
     min-height: 100vh;
     font-family: Roboto;
+    color: white;
+}
+
+.base {
+    background-color: #4f1a63;
+    color: white;
 }
 
 .intro_wrapper {
@@ -472,6 +478,24 @@ body {
     justify-content: center;
 }
 
+.auth_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .housing h1 {
     font-size: 48px;
     margin-bottom: 60px;
@@ -485,6 +509,71 @@ body {
 }
 
 .housing {
+    min-height: 100vh;
+    font-family: Roboto;
+}
+
+.team h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.team p {
+    font-size: 24px;
+    max-width: 640px;
+    padding-bottom: 10px;
+}
+
+.team {
+    min-height: 100vh;
+    font-family: Roboto;
+}
+
+.team img {
+    border-radius: 1em;
+    width: 120px;
+    height: 120px;
+}
+
+.teamMember {
+    animation: teamMemberColor 10s infinite;
+}
+
+@keyframes teamMemberColor {
+    0% {
+        color: #07DE98;
+    }
+    15% {
+        color: #15F505;
+    }
+    50% {
+        color: #D7DE07;
+    }
+    65% {
+        color: red;
+    }
+    75% {
+        color: #c800ff;
+    }
+    100% {
+        color: #07DE98;
+    }
+}
+
+.auth h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.auth p {
+    font-size: 24px;
+    max-width: 640px;
+    padding-bottom: 10px;
+}
+
+.auth {
     min-height: 100vh;
     font-family: Roboto;
 }
@@ -510,6 +599,13 @@ body {
     padding-bottom: 10px;
 }
 
+.call a {
+    font-size: 24px;
+    max-width: 640px;
+    padding-bottom: 10px;
+    color: white;
+}
+
 .call {
     min-height: 100vh;
     font-family: Roboto;
@@ -517,12 +613,12 @@ body {
 
 .menu_item {
     text-decoration: none;
-    color: green;
+    color: #ff0303;
     position: relative;
 }
 
 .menu_item:hover {
-    color: blue;
+    color: #f03535;
 }
 
 .menu_item::after {
@@ -532,7 +628,7 @@ body {
     right: 0;
     width: 0%;
     height: 2px;
-    background-color: #3476f9;
+    background-color: #c800ff;
     transition: 500ms;
 }
 
@@ -541,7 +637,7 @@ body {
 }
 
 footer {
-    background-color: #34547a;
+    background-color: #5a2e6b;
 }
 
 .footer_wrapper {
